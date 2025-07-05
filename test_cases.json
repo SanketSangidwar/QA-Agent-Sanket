@@ -1,0 +1,8 @@
+{
+  "test_cases": [
+    {
+      "title": "Sign up with valid email and password",
+      "steps": "await page.goto('https://recruter.ai/signup');\nawait page.fill('#email', 'test@example.com');\nawait page.fill('#password', 'StrongP@ss1');\nawait page.click('#signup');\nawait expect(page).toHaveURL(/dashboard/);"
+    }
+  ]
+}
